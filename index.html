@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Device Type Check</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>What type of device is this?</h1>
+
+    <script>
+      function deviceTypeCheck() {
+        if(/webOS|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+          return 'this device is iOS';
+        } else if (/Android/i.test(navigator.userAgent)) {
+          return 'this device is Android';
+        } else {
+          return 'this is just a mobile banner';
+        }
+      }
+    </script>
+
+  </body>
+</html>
